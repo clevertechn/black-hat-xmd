@@ -9,20 +9,10 @@
         "dev": "nodemon index.js",
         "install:no-puppeteer": "PUPPETEER_SKIP_DOWNLOAD=true PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm install"
     },
-    "keywords": [
-        "whatsapp bot",
-        "black-hat-xmd",
-        "bot",
-        "baileys",
-        "clevertechn",
-        "library"
-    ],
+    "keywords": ["whatsapp bot", "black-hat-xmd", "bot", "baileys", "clevertechn", "library"],
     "author": "clevertechn",
     "license": "MIT",
-    "engines": {
-        "node": ">=20.x",
-        "npm": ">=10.x"
-    },
+    "engines": { "node": ">=20.x" },
     "dependencies": {
         "@bochilteam/scraper": "^5.0.1",
         "@bochilteam/scraper-facebook": "^5.0.0",
@@ -69,10 +59,28 @@
         "yt-search": "^2.13.1",
         "ytdl-core": "^4.11.5"
     },
-    "devDependencies": {
-        "nodemon": "^3.1.14"
+    "devDependencies": { "nodemon": "^3.1.14" },
+    "overrides": { "form-data": "^4.0.6" },
+    "pkg": {
+        "assets": [
+            "node_modules/ffmpeg-static/ffmpeg",
+            "node_modules/sharp/**/*"
+        ]
     },
-    "overrides": {
-        "form-data": "^4.0.6"
-    }
+    "allowScripts": {
+       "@whiskeysockets/baileys": true,
+        "ffmpeg-static": true,
+        "sharp": true,
+        "better-sqlite3": true,
+        "protobufjs": true,
+        "sleep": true
+    },
+    "trustedDependencies": [
+        "@whiskeysockets/baileys",
+        "better-sqlite3",
+        "ffmpeg-static",
+        "protobufjs",
+        "sharp",
+        "sleep"
+    ]
 }
