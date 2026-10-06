@@ -1,0 +1,38 @@
+{
+  "name": "black-hat-xmd",
+  "description": "BLACK HAT-XMD - WhatsApp MD Multi-Device Bot powered by Baileys",
+  "repository": "https://github.com/clevertechn/black-hat-xmd",
+  "logo": "",
+  "keywords": [
+    "whatsapp",
+    "baileys",
+    "bot",
+    "node",
+    "md",
+    "black-hat-xmd"
+  ],
+  "stack": "heroku-26",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "env": {
+    "SESSION_ID": {
+      "description": "BLACK HAT-XMD v1.0.0 session token (BlackHat~...) — get yours on the pairing page",
+      "required": true,
+      "value": ""
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0"
+    }
+  ]
+}
