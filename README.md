@@ -6,7 +6,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/clevertechn.png" alt="BLACK HAT-XMD" height="250">
+  <img src="https://github.com/clevertechn/xmd/blob/main/utils/bot_image.jpg" alt="BLACK HAT-XMD" height="250">
 </div>
 
 ---
